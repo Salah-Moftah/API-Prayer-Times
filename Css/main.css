@@ -1,0 +1,125 @@
+body {
+  font-family: "Cairo", sans-serif;
+}
+:root {
+  --main-color: #006666;
+  --second-color: #0066666d;
+}
+.contain {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+header .contain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+header {
+  width: 100%;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 40%);
+  background-color: var(--main-color);
+  margin-bottom: 30px;
+}
+.head {
+  color: #fff;
+  z-index: 1;
+}
+.time {
+  background-color: #fff;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+.time span {
+  color: var(--main-color);
+}
+.head h2 {
+  font-weight: bold;
+}
+.content {
+  position: relative;
+  background-image: url("../imgs/2840.jpg");
+  background-size: cover;
+  /* height: calc(100vh - 170px); */
+  background-color: var(--second-color);
+}
+.content::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 90%);
+}
+.city {
+  position: relative;
+}
+.city ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.city li {
+  width: 350px;
+  height: 200px;
+  border: 3px solid var(--main-color);
+  border-radius: 6px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.city li:hover,
+.active {
+  width: 450px;
+  background-color: var(--second-color);
+  color: #fff;
+  border-width: 4px;
+}
+.text {
+  background-color: var(--second-color);
+}
+.line {
+  height: 6px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  position: relative;
+  border-top: 3px solid var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+.info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.card-title {
+  color: var(--main-color);
+}
+@media (max-width: 767px) {
+  .time {
+    font-size: 16px;
+  }
+  .date {
+    font-size: 16px;
+  }
+  .date span {
+    font-size: 16px !important;
+  }
+  .city ul {
+    flex-wrap: wrap;
+  }
+  .contain {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

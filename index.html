@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Css/bootstrap.min.css">
+  <link rel="stylesheet" href="Css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>مواقيت الصلاة</title>
+</head>
+<body>
+  <header>
+    <div class="contain">
+      <div class="head">
+        <h2>مواقيت الصلاة</h2>
+      </div>
+      <div class="time">
+        <div class="date"></div>
+      </div>
+    </div>
+  </header>
+  <div class="content contain">
+    <div class="city">
+      <ul class="cairo">
+        <li class="active" data-city="cairo" >القاهرة</li>
+        <li data-city="giza">الجيزة</li>
+        <li data-city="alex">الاسكندرية</li>
+        <li data-city="aswan">أسوان</li>
+        <li data-city="Sharm El-Shaikh">شرم الشيخ</li>
+      </ul>
+    </div>
+    
+    <div class="line"></div>
+    <div class="info">
+      <div class="card mb-3 " style="max-width: 20rem; height: 200px;">
+        <div class="card-header text-center fs-3 fw-bold text">الفجر</div>
+        <div class="time-1 card-body d-flex justify-content-center align-items-center">
+          
+        </div>
+      </div>
+      <div class="card mb-3 " style="max-width: 20rem; height: 200px;">
+        <div class="card-header text-center fs-3 fw-bold text">الشروق</div>
+        <div class="card-body time-2 d-flex justify-content-center align-items-center">
+          
+        </div>
+      </div>
+      <div class="card mb-3 " style="max-width: 20rem; height: 200px;">
+        <div class="card-header text-center fs-3 fw-bold text">الظهر</div>
+        <div class="card-body time-3 d-flex justify-content-center align-items-center">
+          
+        </div>
+      </div>
+      <div class="card mb-3 " style="max-width: 20rem; height: 200px;">
+        <div class="card-header text-center fs-3 fw-bold text">العصر</div>
+        <div class="card-body time-4 d-flex justify-content-center align-items-center">
+          
+        </div>
+      </div>
+      <div class="card mb-3 " style="max-width: 20rem; height: 200px;">
+        <div class="card-header text-center fs-3 fw-bold text">المغرب</div>
+        <div class="card-body time-5 d-flex justify-content-center align-items-center">
+          
+        </div>
+      </div>
+      <div class="card mb-3 " style="max-width: 20rem; height: 200px;">
+        <div class="card-header text-center fs-3 fw-bold text">العشاء</div>
+        <div class="card-body time-6 d-flex justify-content-center align-items-center">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./node_modules/axios/dist/axios.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
