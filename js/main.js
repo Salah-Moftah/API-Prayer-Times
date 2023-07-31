@@ -1,5 +1,5 @@
   function getTimings(city) {
-    axios.get(`http://api.aladhan.com/v1/timingsByCity?country=EG&city=${city}`)
+    axios.get(`https://api.aladhan.com/v1/timingsByCity?country=EG&city=${city}`)
     .then((response) => {
         let content_1 = `<h5 class="card-title fs-1 fw-bold">${response.data.data.timings.Fajr}</h5>`
         document.querySelector('.time-1').innerHTML = content_1;
@@ -44,7 +44,7 @@ let citys = document.querySelectorAll('.cairo li').forEach((el) => {
 
 
 function getdate() {
-  axios.get('http://api.aladhan.com/v1/timingsByCity?country=EG&city')
+  axios.get('https://api.aladhan.com/v1/timingsByCity?country=EG&city')
 .then((response) => {
     let contect =`تاريخ اليوم: <span style="color: black; font-size: 30px">${response.data.data.date.hijri.weekday.ar}</span> <span dir="ltr">${response.data.data.date.readable}</span>`;
     document.querySelector('.date').innerHTML = contect;
